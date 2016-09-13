@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.autoplaylist.catalog">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlaylistGeneratorActivity"
+            android:label="@string/playlist_generator_activity"
+            android:parentActivityName=".MainScreenActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.autoplaylist.catalog.MainScreenActivity" />
+        </activity>
+        <activity
+            android:name=".TrackListActivity"
+            android:label="@string/track_list_activity"
+            android:parentActivityName=".MainScreenActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.autoplaylist.catalog.MainScreenActivity" />
+        </activity>
+        <activity
+            android:name=".TrackInfoActivity"
+            android:label="@string/track_info_activity"
+            android:parentActivityName=".TrackListActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.autoplaylist.catalog.TrackListActivity" />
+        </activity>
+        <activity
+            android:name=".PlaylistTrackInfoActivity"
+            android:label="@string/track_info_activity"
+            android:parentActivityName=".PlaylistGeneratorActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.autoplaylist.catalog.PlaylistGeneratorActivity" />
+        </activity>
+    </application>
+
+</manifest>

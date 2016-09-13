@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Automatic Playlist Generator</string>
+    <string name="opening_message">Welcome to the automatic playlist generator!
+        \n\n\nThe purpose of this generator is to provide you with music that you have never heard of before, but still tailors to your music taste!
+        \n\n\nTo begin using the application, rate pieces of music within the track selection tab.</string>
+    <string name="app_text">APG</string>
+    <string name="track_list_activity">Track List</string>
+    <string name="track_info_activity">Track Info</string>
+    <string name="playlist_generator_activity">Generated Playlist</string>
+</resources>
